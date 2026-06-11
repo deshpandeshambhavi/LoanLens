@@ -177,26 +177,3 @@ cd backend
 mvn clean package
 java -jar target/emi-calculator-1.0.0.jar
 ```
-
----
-
-## Extending the Project
-
-### Add a database (H2 / MySQL)
-```xml
-<!-- pom.xml -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-jpa</artifactId>
-</dependency>
-```
-Add a `LoanHistory` entity + repository to persist calculations.
-
-### Add authentication (Spring Security + JWT)
-- Add `spring-boot-starter-security` dependency
-- Create `JwtAuthFilter` and `UserDetailsService`
-
-### Deploy
-- Backend: Package as JAR and deploy to any cloud (AWS Elastic Beanstalk, Railway, Render)
-- Frontend: Deploy `index.html` to Vercel / Netlify / GitHub Pages
-- Update the API URL in `index.html` from `localhost:8080` to your deployed URL
