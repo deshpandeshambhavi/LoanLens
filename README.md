@@ -177,3 +177,12 @@ cd backend
 mvn clean package
 java -jar target/emi-calculator-1.0.0.jar
 ```
+---
+
+## 👤 Author
+
+**Shambhavi Deshpande**  
+GitHub: @deshpandeshambhavi (https://github.com/deshpandeshambhavi)  
+Email: 25shambhavideshpande@gmail.com
+
+---
